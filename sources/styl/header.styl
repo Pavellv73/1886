@@ -1,0 +1,237 @@
+header
+  width 100%
+  height auto
+  background-color #ffffff
+  position fixed
+  z-index 2
+  transition all 0.2s ease
+
+  .header-content
+    width 100%
+    height auto
+    display flex
+    display -webkit-flex
+    justify-content space-between
+    align-items flex-start
+    flex-direction row
+    padding-top 6px
+    padding-bottom 12px
+    box-sizing border-box
+    position relative
+    border-bottom 1px solid #ededed
+    @media (min-width 768px)
+      padding 11px 33px
+    @media (min-width 1280px)
+      padding 0
+      justify-content center
+      align-items center
+      flex-direction column
+      border-bottom none
+
+
+
+    .top-block
+      width 100%
+      height auto
+      @media (min-width 768px)
+        display flex
+        display -webkit-flex
+        justify-content space-between
+        align-content center
+        flex-direction row
+      @media (min-width 1280px)
+        padding-bottom 24px
+        border-bottom 1px solid #ededed
+        padding 15px 50px
+        box-sizing border-box
+
+
+
+
+      .text-head-block
+        display none
+        @media (min-width 768px)
+          display block
+          width 50%
+          display flex
+          display -webkit-flex
+          justify-content center
+          align-items center
+        @media (min-width 1280px)
+          width 30%
+
+        p
+          color #333333
+          font-family "Nocturne-Serif-Medium"
+          font-size 12px
+          font-weight 400
+          text-align left
+          line-height 15px
+          max-width 347px
+          @media (min-width 1280px)
+            font-size 14px
+            max-width 392px
+
+
+
+
+      .logo
+        width 100%
+        height auto
+        @media (min-width 768px)
+          width 50%
+        @media (min-width 1280px)
+          width 30%
+
+
+        .logo-block
+          width 100%
+          height auto
+          display flex
+          display -webkit-flex
+          justify-content center
+          align-content center
+          flex-direction column
+          @media (min-width 768px)
+            align-items flex-end
+          @media (min-width 1280px)
+            align-items center
+
+          img
+            width 26px
+            height 22px
+            margin 0 auto
+            @media (min-width 768px)
+              margin 0
+              width 38px
+              height 32px
+            @media (min-width 1280px)
+              width 48px
+              height 40px
+
+          p
+            color #e9857e
+            font-family "Nocturne-Serif-Mediumitalic"
+            font-size 14px
+            font-weight 500
+            text-align center
+            @media (min-width 768px)
+              font-size 16px
+            @media (min-width 1280px)
+              display none
+
+      .phone
+        display none
+        @media (min-width 1280px)
+          display block
+          width 30%
+
+        .phone-block
+          width 100%
+          height auto
+          display flex
+          display -webkit-flex
+          justify-content center
+          align-items flex-end
+          flex-direction column
+
+          p
+            color #333333
+            font-family "Nocturne-Serif-Light"
+            font-size 14px
+            font-weight 400
+            letter-spacing 0.23px
+
+          a
+            color #333333
+            font-family "Nocturne-Serif-Medium"
+            font-size 20px
+            font-weight 600
+            letter-spacing 0.17px
+            transition all 0.2s ease
+            &:hover
+              color #878787
+
+
+
+
+    .menu-block
+      display none
+      width 100%
+      height 100vh
+      position absolute
+      top 58px
+      @media (min-width 768px)
+        width 298px
+        height 100vh
+        right 0
+        top 79px
+      @media (min-width 1280px)
+        display flex
+        position relative
+        width 100%
+        height 48px
+        top 0
+        padding 9px 50px
+        box-sizing border-box
+        opacity 0.8
+
+
+      nav
+        width 100%
+        height 100vh
+        display flex
+        display -webkit-flex
+        justify-content flex-start
+        align-content center
+        flex-direction column
+        padding-top 48px
+        box-sizing border-box
+        opacity 0.96
+        background #FFFFFF
+        @media (min-width 1280px)
+          padding-top 0
+          justify-content space-around
+          align-items center
+          flex-direction row
+          height 32px
+
+        a
+          width auto
+          color #555555
+          font-family "Nocturne-Serif-Bold"
+          font-size 15px
+          font-weight 600
+          text-align center
+          margin-bottom 21px
+          position relative
+          @media (min-width 1280px)
+            font-size 13px
+          &:before
+            content: "";
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            right: 100%;
+            bottom: -2px;
+            background: #de6f71;
+            height: 2px;
+            -webkit-transition-property: right;
+            transition-property: right;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+
+          @media (min-width 1280px)
+            margin-bottom 0
+
+        a:hover:before, a:focus:before, a:active:before {
+          right: 0;
+        }
+
+
+
+
+
+    

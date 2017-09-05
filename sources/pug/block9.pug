@@ -1,0 +1,39 @@
+section.block9
+    div.block9-content
+        div.block9-head
+            h2 Рассчитаем стоимость проекта
+            p У нас действуют специальные условия для клиентов. Помощь с вашим проектом, а также скидки на каждый 11 м² при оплате в день заказа.
+
+        div.form-block.cnt.row
+            form(method="post" action="mailer.php")
+                div.input-position
+                    div.input-blocks
+                        div.input-block
+                            label.info.info1 Площадь стен:
+                            input(name="area" placeholder="кв. м." type="text")
+
+                        div.input-block
+                            label.info.info2 Угловые элементы:
+                            input(name="angular-elements" placeholder="пог. м." type="text")
+
+                        div.faq-popup1
+                            p Угловые элементы — это сплошные элементы из кирпича, которые вырезаются в форме углов и накладываются на углы.
+                        div.faq-popup2
+                            p Угловые элементы
+
+
+                    div.input-blocks
+                        div.input-block-check
+                            label Помощь <br>специалиста:
+                            input.checkbox(name="help-spec" type="checkbox")
+
+                        div.input-block-check
+                            label Помощь <br>команды:
+                            input.checkbox(name="help-team" type="checkbox")
+
+                div.form-bottom
+                    div.border-block-input
+                        input(name="email" placeholder="Ваш email" type="text")
+                    div.border-block-buttom
+                        button(type="submit") Получить расчёт
+

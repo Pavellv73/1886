@@ -1,0 +1,179 @@
+.block2
+  width 100%
+  height auto
+  background-color #f7f7f7
+
+  .block2-content
+    width 100%
+    height auto
+    justify-content center
+    align-items center
+    flex-direction column
+    padding-top 40px
+    @media (min-width 768px)
+      padding-top 64px
+    @media (min-width 1280px)
+      padding-top 112px
+
+    .block2-head
+      width 100%
+      height auto
+      display flex
+      display -webkit-flex
+      justify-content center
+      align-items center
+      flex-direction column
+
+      span
+        color #de6f71
+        font-family "Nocturne-Serif-Italic"
+        font-size 20px
+        font-weight 600
+        position relative
+        margin-bottom 16px
+        @media (min-width 768px)
+          font-size 24px
+          margin-bottom 32px
+        &:before
+          content ""
+          width 32px
+          height 2px
+          border-radius 100px
+          background-image linear-gradient(197deg, #d45a64 0%, #ffb099 100%)
+          position absolute
+          top 11px
+          left -41px
+
+        &:after
+          content ""
+          width 32px
+          height 2px
+          border-radius 100px
+          background-image linear-gradient(197deg, #d45a64 0%, #ffb099 100%)
+          position absolute
+          top 11px
+          right -41px
+
+      h2
+        margin-bottom 12px
+        @media (min-width 768px)
+          margin-bottom 20px
+
+      p
+        text-align center
+        margin-bottom 40px
+        @media (min-width 768px)
+          margin-bottom 80px
+          max-width 635px
+          line-height 22px
+        @media (min-width 1280px)
+          line-height 30px
+          max-width 732px
+          margin-bottom 198px
+
+
+    .info-blocks
+      width 100%
+      height auto
+      background #FFFFFF
+      margin-bottom 40px
+      @media (min-width 768px)
+        margin-bottom 62px
+      @media (min-width 1280px)
+        margin-bottom 168px
+
+
+      &:nth-of-type(even)
+        .info-block
+          @media (min-width 768px)
+            flex-direction row-reverse
+            .img-info
+              margin-right 33px
+              margin-left 0
+              @media (min-width 768px)
+                left 33px
+              @media (min-width 1280px)
+                left 44px
+
+      .info-block
+        width 100%
+        height auto
+        display flex
+        display -webkit-flex
+        justify-content center
+        align-items center
+        flex-direction column-reverse
+        padding-left 19px
+        padding-right 19px
+        box-sizing border-box
+        @media (min-width 768px)
+          flex-direction row
+          padding-left 33px
+          padding-right 33px
+          position relative
+          padding-top 64px
+          padding-bottom 30px
+          justify-content flex-start
+          height 274px
+        @media (min-width 1280px)
+          height 500px
+          &:last-child
+            margin-bottom 0
+
+        .img-info
+          margin-left 0
+          @media (min-width 768px)
+            margin-left 33px
+
+        .text-info
+          @media (min-width 768px)
+            max-width 332px
+          @media (min-width 1280px)
+            max-width 540px
+
+
+          h2
+            margin-bottom 12px
+            text-align left
+            @media (min-width 768px)
+              margin-bottom 20px
+
+          p
+            text-align left
+            font-size 15px
+            @media (min-width 768px)
+              line-height 26px
+            @media (min-width 1280px)
+              font-size 20px
+              line-height 30px
+
+        .img-info
+          width 100%
+          height auto
+          margin-bottom 24px
+          @media (min-width 768px)
+            margin-bottom 0
+            width 340px
+            height 320px
+            position absolute
+            right 33px
+            top -47px
+          @media (min-width 1280px)
+            right 44px
+            width 584px
+            height 548px
+
+          img
+            width 281px
+            height 265px
+            @media (min-width 768px)
+              width 100%
+              height 320px
+            @media (min-width 1280px)
+              height 548px
+
+
+
+
+
+
